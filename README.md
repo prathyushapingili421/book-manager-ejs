@@ -59,9 +59,21 @@ This project showcases my ability to build a complete web application from scrat
 * **Frontend**: Html, CSS
 * **Other**: Responsive design, form handling, server-side rendering
 
-```
-
 ---
+### Home Page
+![Home Page](<img width="427" height="263" alt="image" src="https://github.com/user-attachments/assets/96c024d3-ca00-4527-ad47-75ef496278e8" />)
+
+### Add New Book
+![Create Page](<img width="409" height="256" alt="image" src="https://github.com/user-attachments/assets/5d9199c8-42cb-481f-97df-e4078c9ee520" />
+)
+
+### Update Book
+![Update Page](<img width="416" height="282" alt="image" src="https://github.com/user-attachments/assets/da9b10a0-89de-47b7-8533-2f0227485ee4" />
+)
+
+### Delete Book
+![Delete Page](<img width="430" height="286" alt="image" src="https://github.com/user-attachments/assets/9e3330bb-51cc-49c0-bc81-3d3101e52f4a" />
+)
 
 
 
