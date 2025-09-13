@@ -60,6 +60,6 @@ This project showcases my ability to build a complete web application from scrat
 * **Other**: Responsive design, form handling, server-side rendering
 
 ---
-###Outputs in Terminal Output.pdf
+### Outputs in Terminal Output.pdf
 
 
