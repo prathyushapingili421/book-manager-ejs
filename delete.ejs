@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Book</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="delete-page">
+    <div class="container">
+        <header>
+            <h1> Delete Book</h1>
+            <a href="/" class="back-link">← Back to Home</a>
+        </header>
+
+        <main>
+            <div class="delete-confirmation">
+                <% if (book) { %>
+                    <div class="warning-box">
+                        <h3> Confirm Deletion</h3>
+                        <p>You are about to delete the book with the highest ID:</p>
+                        
+                        <div class="book-to-delete">
+                            <p><strong>ID:</strong> <%= book.id %></p>
+                            <p><strong>Title:</strong> <%= book.title %></p>
+                            <p><strong>Author:</strong> <%= book.author %></p>
+                        </div>
+
+                        <p class="warning-text">This action cannot be undone!</p>
+                        
+                        <form action="/delete-highest-id" method="POST" class="form-actions">
+                            <button type="submit" class="btn btn-danger">Yes, Delete Book</button>
+                            <a href="/" class="btn btn-secondary">Cancel</a>
+                        </form>
+                    </div>
+                <% } else { %>
+                    <div class="no-books">
+                        <p>No books available to delete.</p>
+                        <a href="/" class="btn btn-primary">Back to Home</a>
+                    </div>
+                <% } %>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

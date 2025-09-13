@@ -1,0 +1,444 @@
+/* Artist Liberty - Creative CSS Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Page-specific backgrounds */
+body.home-page {
+    background: linear-gradient(135deg, #C3CED1, #E6DFDA); /* soft gradient */
+}
+
+body.create-page {
+    background: #2d545e;
+}
+
+body.update-page {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.delete-page {
+    background: #e5eaf5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.9);
+    font-style: italic;
+}
+
+.back-link {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: 15px;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+}
+
+/* Default buttons */
+.btn-primary {
+    background: linear-gradient(45deg, #42a5f5, #478ed1);
+    color: white;
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #66bb6a, #57a05a);
+    color: white;
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #ef5350, #d32f2f);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content */
+main {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* --- Home Page Custom Styling --- */
+.home-page main {
+    background: #C29D9E; /* muted rose */
+    color: #E6DFDA;      /* soft beige text */
+}
+
+.home-page .book-card {
+    background: #DF829D; /* rosy pink cards */
+    color: #fff;
+}
+
+.home-page .book-title,
+.home-page .book-author,
+.home-page .book-id {
+    color: #fff;
+}
+
+/* Buttons harmonized with palette */
+.home-page .btn-primary {
+    background: linear-gradient(45deg, #DF829D, #C29D9E);
+    color: #fff;
+}
+
+.home-page .btn-secondary {
+    background: linear-gradient(45deg, #C3CED1, #E6DFDA);
+    color: #333;
+}
+
+.home-page .btn-danger {
+    background: linear-gradient(45deg, #DF829D, #9c3f62);
+    color: #fff;
+}
+
+/* --- Create / Update / Delete pages --- */
+.create-page main {
+    background: #c89666;
+}
+
+.delete-page main {
+    background: #d0bdf4;
+}
+
+main h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.2em;
+    text-align: center;
+}
+
+/* Books Grid - 3 books per row */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+    align-items: stretch;
+}
+
+/* Responsive grid */
+@media (max-width: 992px) {
+    .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.book-card {
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+}
+
+.book-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #42a5f5, #478ed1, #66bb6a);
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.book-id {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.book-title {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    flex-grow: 1;
+}
+
+.book-author {
+    font-style: italic;
+    font-size: 1.1em;
+    margin-top: auto;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #42a5f5;
+    box-shadow: 0 0 10px rgba(66, 165, 245, 0.3);
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Current Book Display */
+.current-book, .current-books {
+    background: rgba(66, 165, 245, 0.1);
+    border-left: 4px solid #42a5f5;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 10px 10px 0;
+}
+
+.current-book h3, .current-books h3 {
+    color: #42a5f5;
+    margin-bottom: 15px;
+}
+
+.current-book p, .current-books p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.books-list {
+    margin-top: 15px;
+}
+
+.book-item {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 3px solid #42a5f5;
+    transition: all 0.3s ease;
+}
+
+.book-item:hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: translateX(5px);
+}
+
+.book-info {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.help-text {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Delete Confirmation */
+.delete-confirmation {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.warning-box {
+    background: rgba(239, 83, 80, 0.1);
+    border: 2px solid #ef5350;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.warning-box h3 {
+    color: #d32f2f;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.book-to-delete {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border-left: 4px solid #ef5350;
+}
+
+.book-to-delete p {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+.warning-text {
+    color: #d32f2f;
+    font-weight: 600;
+    margin: 20px 0;
+    font-size: 1.1em;
+}
+
+/* No Books Message */
+.no-books {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.2em;
+}
+
+.no-books a {
+    color: #42a5f5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.no-books a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2.2em;
+    }
+    
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        min-width: 200px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.book-card,
+.form-container,
+.warning-box,
+.current-book {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Glassmorphism effects */
+header,
+main {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
