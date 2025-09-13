@@ -1,7 +1,7 @@
 #  Book Library (CRUD App)
 
 A full-stack web application demonstrating **CRUD operations** (Create, Read, Update, Delete) using **Node.js**, **Express**, and **EJS**.  
-The app is styled with a custom **Artist Liberty** CSS theme featuring responsive layouts, equal-height cards, hover animations, and glassmorphism effects.  
+ 
 
 # **Why this project matters:**  
 This project showcases my ability to build a complete web application from scratch, covering both **frontend (HTML, CSS, EJS templates)** and **backend (Express routes, HTTP GET/POST requests)**. It highlights skills in server-side rendering, routing, form handling, and responsive UI design—all core skills for full-stack or backend engineering roles.
