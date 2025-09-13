@@ -55,8 +55,8 @@ This project showcases my ability to build a complete web application from scrat
 
 ##  Technologies
 
-* **Backend**: [Node.js](https://nodejs.org/), [Express](https://expressjs.com/)
-* **Frontend**: [EJS](https://ejs.co/), [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* **Backend**: Node.js, Express, HTTP
+* **Frontend**: Html, CSS
 * **Other**: Responsive design, form handling, server-side rendering
 
 ```
@@ -64,5 +64,4 @@ This project showcases my ability to build a complete web application from scrat
 ---
 
 
-<img width="427" height="263" alt="image" src="https://github.com/user-attachments/assets/bca8b656-6f17-457e-bb05-45b4ee247dc2" />
 
