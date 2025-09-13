@@ -4,7 +4,7 @@ A full-stack web application demonstrating **CRUD operations** (Create, Read, Up
  
 
 # **Why this project matters:**  
-This project showcases my ability to build a complete web application from scratch, covering both **frontend (HTML, CSS, EJS templates)** and **backend (Express routes, HTTP GET/POST requests)**. It highlights skills in server-side rendering, routing, form handling, and responsive UI design—all core skills for full-stack or backend engineering roles.
+This project showcases my ability to build a complete web application from scratch, covering both **frontend (HTML, CSS, EJS templates)** and **backend (Express routes, HTTP GET/POST requests)**. It highlights skills in server-side rendering, routing, form handling, and responsive UI design all core skills for full-stack or backend engineering roles.
 
 ---
 
